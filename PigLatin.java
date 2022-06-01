@@ -1,5 +1,8 @@
-// Write a program in java to enter a word and convert it into pig-latin form
-import java.util.*;     //q567
+/**
+ * Write a program in java to enter a word and convert it into pig-latin form
+ */
+
+import java.util.*;
 class PigLatin {
     String str;
     int l;
