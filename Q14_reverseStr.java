@@ -4,7 +4,7 @@
  */
 
 import java.util.*;
-class Q14_Reverse{
+class Q14_ReverseStr{
     String str;
     StringBuffer sb;
     String[] arr;
@@ -23,7 +23,7 @@ class Q14_Reverse{
         }
     }
     public static void main(String[] Args){
-        Q14_Reverse rev = new Q14_Reverse();
+        Q14_ReverseStr rev = new Q14_ReverseStr();
         rev.input();
         rev.reverse();
     }
