@@ -16,7 +16,7 @@ class encoding{
     }
     void input(String str, int n){
         copy = str;
-        sent = str.toLowerCase().trim() + " ";
+        sent = str.toLowerCase().trim();
         words = sent.split(" ");
         k = n-1;
     }
