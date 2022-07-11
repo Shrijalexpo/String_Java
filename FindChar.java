@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/**
+ * Write a program in java to enter a string in Ascii form and convert it into String in character form ensuring that
+ * no special character is displayed and output should be case sensitive.
+ */
 class FindChar{
     int len;
     String input;
