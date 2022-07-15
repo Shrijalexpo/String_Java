@@ -26,17 +26,32 @@ class SmithNo {
             number = number/10;
         }
     }
+    boolean isprime(int x){
+        int count = 0;
+        for (int i = 2; i < x/2+1; i++) {
+            if(x% i == 0){
+                count++;
+            }
+        }
+        if(count == 0){
+            return true;
+        }
+        return false;
+    }
     void Factors(){
         int number = Integer.parseInt(num);
-        int i;
+        int i, count = 0;
         for(i = 2; i< number; i++) {
-            while(number%i == 0) {
-                factors[i-2] = i;
-                number = number/i;
+            if(isprime(i)){
+                while(number%i == 0) {
+                    factors[count] = i;
+                    number = number/i;
+                    count++;
+                }
             }
         }
         if(number >2) {
-            factors[i-2+1] = number;
+            factors[count+1] = number;
         }
         System.out.print("Factors are: ");
         for (int j = 0; j < factors.length; j++) {
