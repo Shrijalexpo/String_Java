@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+
 class arrangeLengthAlphabet{
     String str;
     String[] arr;
@@ -21,8 +22,13 @@ class arrangeLengthAlphabet{
             System.out.println("Wrong Input");
             System.exit(0);
         }
-        arr = str.split(" ");
-        len = arr.length;
+        StringTokenizer st = new StringTokenizer(str," ");
+        len = st.countTokens();
+        arr = new String[len];
+        int count = 0;
+        while (st.hasMoreTokens()){
+            arr[count++] = st.nextToken();
+        }
     }
     void arrange(){
         String temp = null;
