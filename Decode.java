@@ -37,11 +37,7 @@ class Decode {
         int a, b;
         char ch1, ch2;
         //new String for storing the decoded text
-        for(
-                int i = 0;
-                i<l;i++)
-
-        {
+        for(int i = 0; i<l;i++){
             ch1 = s.charAt(i);
             ch2 = s.charAt(i + 1);
             a = ch1 + shift - 1;
